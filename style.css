@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+}
+
+
+#container{
+    display:grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+    justify-content:center;
+    align-content:center;
+    height: 100vh;
+}
+
+#display{
+    background-color: grey;
+    grid-column:span 4;
+}
+
+.L{
+    grid-column:span 2;
+}
+
+button:not(.L){
+    grid-column:span 1;
+}
+
+
